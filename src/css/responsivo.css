@@ -1,55 +1,28 @@
 @media (max-width: 991px) {
     header {
         padding: 20px ;
+        flex-direction: column;
     }
 
     header .logo {
-        max-width: 60px;
+        max-width: 65px;
     }
 
     header ul {
         display: none;
     }
 
-    .toggle {
-        position: relative;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        background: url(/src/imagens/menu.png);
-        background-size: 30px;
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: invert(1);
-        z-index: 11;
-    }
-
-    .toggle.active {
-        position: fixed;
-        right: 20px;
-        background: url(/src/imagens/close.png);
-        background-size: 25px;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    header ul.navigation.active {
-        position: fixed;
-        top: 0;
-        left: 0;
+    header ul.navigation {
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: #fff;
+        justify-content: space-evenly;
         z-index: 10;
     }
 
     header ul li a {
-        font-size: 1.5em;
-        margin: 5px 0;
+        font-size: 1em;
+        margin: 20px 0px;
     }
 
     section {
@@ -64,6 +37,7 @@
     .content .textBox h2 {
         font-size: 2.5em;
         margin-bottom: 15px;
+        margin-top: 60px;
     }
 
     .content .textBox {
